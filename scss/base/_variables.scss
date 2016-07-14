@@ -1,0 +1,43 @@
+// Variables
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+// Breakpoints
+$bp-larger-than-mobile    : "max-width: 400px" !default;
+$bp-larger-than-phablet   : "max-width: 550px" !default;
+$bp-larger-than-tablet    : "max-width: 750px" !default;
+$bp-larger-than-desktop   : "max-width: 1000px" !default;
+$bp-larger-than-desktophd : "max-width: 1200px" !default;
+$bp-end-than-mobile    : "min-width: 401px" !default;
+$bp-end-than-phablet   : "min-width: 549px" !default;
+$bp-end-than-tablet    : "min-width: 749px" !default;
+$bp-end-than-desktop   : "min-width: 999px" !default;
+
+// Colors
+$light-grey: #e1e1e1 !default;
+$dark-grey: #333 !default;
+$primary-color: #33c3f0 !default;
+$secondary-color: lighten($dark-grey, 13.5%) !default;
+$border-color: #bbb !default;
+$link-color: #1eaedb !default;
+$font-color: #222 !default;
+
+
+$color-white: #fff;
+$color-black: #040707;
+$color-green: #74bf45;
+
+
+// Typography
+$font-family: "Lato", Helvetica, Arial, sans-serif !default;
+$font-family-2: "ailerons", Helvetica, Arial, sans-serif !default;
+
+//Grid Variables
+$container-width: 960px !default;
+$container-width-larger-than-mobile: 85% !default;
+$container-width-larger-than-phablet: 80% !default;
+$total-columns: 12 !default;
+$column-width: 100 / $total-columns !default; // calculates individual column width based off of # of columns
+$column-margin: 4% !default; // space between columns
+
+// Misc
+$global-radius: 4px !default;

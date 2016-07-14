@@ -1,0 +1,134 @@
+.hero {
+	width: 100%;
+	height: 100vh;
+	min-height: 700%;
+	.hero-left {
+		float: left;
+		width: 50%;
+		height: 100%;
+		background: url('../images/background-pattern-top.png') no-repeat top left, url('../images/background-pattern-bottom.png') no-repeat bottom right, #fff;
+	}
+	.hero-right {
+		float: right;
+		width: 50%;
+		height: 100%;
+		background: url('../images/background-hero.jpg') no-repeat bottom right;
+		background-size: cover;
+	}
+}
+
+.hero-left {
+	display: table;
+	text-align: center;
+	.logo {
+		margin: 0 0 2em;
+	}
+	.date {
+		text-transform: uppercase;
+		font-weight: 600;
+		margin-bottom: 0.2em;
+		color: $color-black;
+	}
+	.venue {
+		font-weight: 600;
+		color: $color-black;
+	}
+	.button-highlights {
+		margin-top: 1em;
+		color: $color-green;
+		border-radius: 25px;
+		font-weight: 700;
+		font-size: 1em;
+		border: 1px solid rgba($color-green, 0.3);
+		padding: 0.25em 2em;
+		height: auto;
+		outline: 0;
+		background: transparent;
+		transition: all 500ms linear;
+		&:hover {
+			color: $color-white;
+			background: $color-green;
+			border: 1px solid rgba(darken($color-green, 5%), 1);
+			outline: 0;
+		}
+		&:focus {
+			border: 1px solid rgba(darken($color-green, 5%), 1);
+			outline: 0;
+		}
+	}
+	.hero-content {
+		display: table-cell;
+		vertical-align: middle;
+		text-align:center;
+	}
+}
+
+.hero-right {
+	display: table;
+	.headings {
+		text-align: left;
+		font-family: $font-family-2;
+		font-size: 3em;
+		width: 80%;
+		margin: 0 auto;
+	  color: $color-white;
+	  line-height: 1.25;
+	  text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.3);	
+	}
+	.subscribe-form {
+		width: 80%;
+		margin: 2em auto 0;
+		label {
+			color: $color-white;
+			font-size: 1.5em;
+			font-weight: 500;
+		}
+		.form-email {
+			width: 75%;
+		  border-radius: 8px 0px 0px 8px;
+		  background-color: $color-white;
+		  color: $color-black;
+		  padding: .75em 1em;
+		  float:left;
+		  font-size: 1em;
+		  height: auto;
+		  outline: 0;
+		  transition: all 500ms linear;
+		  border: none;
+		  &:hover, &:focus {
+		  	border: none;
+		  	background: darken($color-white, 2%);
+		  }
+		}
+		.form-submit{
+			width: 25%;
+			float: right;
+		  background-image: -moz-linear-gradient( 120deg, rgb(89,164,42) 0%, rgb(116,191,69) 100%);
+		  background-image: -webkit-linear-gradient( 120deg, rgb(89,164,42) 0%, rgb(116,191,69) 100%);
+		  background-image: -ms-linear-gradient( 120deg, rgb(89,164,42) 0%, rgb(116,191,69) 100%);
+		  border: none;
+		  border-radius: 0px 8px 8px 0;
+		  color: $color-white;
+		  font-size: 1em;
+		  text-transform: capitalize;
+		  padding: .75em 1em;
+		  height: auto;
+		  line-height: normal;
+		  outline: 0;
+			transition: all 500ms linear;
+		  &:hover {
+		  	color: $color-white;
+				background-image: -moz-linear-gradient( 120deg, rgb(116,191,69) 0%, rgb(89,164,42) 100%);
+				background-image: -webkit-linear-gradient( 120deg, rgb(116,191,69) 0%, rgb(89,164,42) 100%);
+				background-image: -ms-linear-gradient( 120deg, 120deg, rgb(116,191,69) 0%, rgb(89,164,42) 100%);
+				outline: 0;
+		  }
+		}
+	}
+	.hero-content {
+		display: table-cell;
+		vertical-align: middle;
+		width: 80%;
+		margin: 0 auto;
+	}
+}

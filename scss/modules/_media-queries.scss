@@ -1,0 +1,250 @@
+// Media Queries
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+// Note: The best way to structure the use of media queries is to create the queries
+// near the relevant code. For example, if you wanted to change the styles for buttons
+// on small devices, paste the mobile query code up in the buttons section and style it
+// there.
+
+// Larger than mobile
+@media (#{$bp-larger-than-mobile}) {
+		.hero {
+		width: 100%;
+		height: 100%;
+		.hero-left {
+			width: 100%;
+			min-height: 400px;
+			padding: 30px 0;
+			background: url('../images/background-pattern.jpg') no-repeat center center;
+			background-size: cover;
+		}
+		.hero-right {
+			width: 100%;
+			min-height: 400px;
+			padding: 30px 0;
+		}
+	}
+	.hero-left {
+		.logo {
+			margin-top: 2em;
+			width: 100px;
+			height: auto;
+			margin-bottom: 1em;
+		}
+		.date {
+			font-size: 1.5em;
+		}
+		.venue {
+			font-size: 1em;
+		}
+		.button-highlights {
+			font-size: 1em;
+		}
+	}
+	.hero-right {
+		.headings {
+			margin-bottom: 1.5em;
+			font-size: 2em;
+			width: 90%;
+			text-align: center;
+			line-height: 1.6;
+		}
+		.subscribe-form {
+			width: 90%;
+			label {
+				text-align: center;
+				font-size: 1.5em;
+			}
+			.form-email {
+				width: 100%;
+				border-radius: 8px;
+			}
+			.form-submit {
+				width: 50%;
+				float: none !important;
+				border-radius: 8px;
+				margin: 0.5em auto;
+				text-align: center;
+				display: block;
+			}
+		}
+	}
+}
+
+// Larger than phablet (also point when grid becomes active)
+@media (#{$bp-end-than-mobile}) and (#{$bp-larger-than-phablet}) {
+			.hero {
+		width: 100%;
+		height: 100%;
+		.hero-left {
+			width: 100%;
+			min-height: 400px;
+			padding: 30px 0;
+			background: url('../images/background-pattern.jpg') no-repeat center center;
+			background-size: cover;
+		}
+		.hero-right {
+			width: 100%;
+			min-height: 400px;
+			padding: 30px 0;
+		}
+	}
+	.hero-left {
+		.logo {
+			margin-top: 2em;
+			width: 100px;
+			height: auto;
+			margin-bottom: 1em;
+		}
+		.date {
+			font-size: 1.5em;
+		}
+		.venue {
+			font-size: 1em;
+		}
+		.button-highlights {
+			font-size: 1em;
+		}
+	}
+	.hero-right {
+		.headings {
+			margin-bottom: 1.5em;
+			font-size: 2em;
+			width: 90%;
+			text-align: center;
+			line-height: 1.6;
+		}
+		.subscribe-form {
+			width: 90%;
+			label {
+				text-align: center;
+				font-size: 1.5em;
+			}
+			.form-email {
+				width: 100%;
+				border-radius: 8px;
+			}
+			.form-submit {
+				width: 50%;
+				float: none !important;
+				border-radius: 8px;
+				margin: 0.5em auto;
+				text-align: center;
+				display: block;
+			}
+		}
+	}
+}
+
+// Larger than tablet
+@media (#{$bp-end-than-phablet}) and (#{$bp-larger-than-tablet}) {
+	.hero {
+		width: 100%;
+		height: 100%;
+		.hero-left {
+			width: 100%;
+			min-height: 500px;
+			padding: 30px 0;
+		}
+		.hero-right {
+			width: 100%;
+			min-height: 400px;
+			padding: 20px 0;
+		}
+	}
+	.hero-left {
+		.logo {
+			margin-top: 2em;
+			width: 150px;
+			height: auto;
+			margin-bottom: 1em;
+		}
+		.date {
+			font-size: 1.5em;
+		}
+		.venue {
+			font-size: 1em;
+		}
+		.button-highlights {
+			font-size: 1em;
+		}
+	}
+	.hero-right {
+		.headings {
+			margin-bottom: 1.5em;
+			font-size: 2.5em;
+			width: 90%;
+			line-height: 1.6;
+		}
+		.subscribe-form {
+			width: 90%;
+			label {
+				text-align: center;
+				font-size: 1.5em;
+			}
+			.form-email {
+				width: 100%;
+				border-radius: 8px;
+			}
+			.form-submit {
+				width: 50%;
+				float: none !important;
+				border-radius: 8px;
+				margin: 0.5em auto;
+				text-align: center;
+				display: block;
+			}
+		}
+	}
+}
+
+// Larger than desktop
+@media (#{$bp-end-than-tablet}) and (#{$bp-larger-than-desktop}) {
+	.hero {
+		width: 100%;
+		height: 100%;
+		.hero-left {
+			width: 100%;
+			min-height: 500px;
+			padding: 30px 0;
+		}
+		.hero-right {
+			width: 100%;
+			min-height: 400px;
+			padding: 20px 0;
+			background-position: center top;
+		}
+	}
+		.hero-left {
+		.logo {
+			margin-top: 2em;
+			width: 150px;
+			height: auto;
+			margin-bottom: 1em;
+		}
+		.date {
+			font-size: 1.5em;
+		}
+		.venue {
+			font-size: 1em;
+		}
+		.button-highlights {
+			font-size: 1em;
+		}
+	}
+	.hero-right {
+		.headings {
+			margin-bottom: 1.5em;
+			font-size: 2.5em;
+			width: 90%;
+			line-height: 1.6;
+			text-align: center;
+		}
+		.subscribe-form {
+			width: 90%;
+		}
+	}
+}
+
+// Larger than Desktop HD
+@media (#{$bp-larger-than-desktophd}) {}
