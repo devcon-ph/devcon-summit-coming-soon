@@ -6,8 +6,8 @@ $(document).ready(function () {
 	  $('body').addClass('modal-active');
 	})
 
-	$('#modal-container').click(function(){
-	  $(this).addClass('out');
+	$('#close').click(function(){
+	  $('#modal-container').addClass('out');
 	  $('body').removeClass('modal-active');
 	});	
 

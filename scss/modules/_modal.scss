@@ -1,3 +1,7 @@
+.modal-active {
+  overflow: hidden;
+}
+
 #modal-container {
   position:fixed;
   display:table;
@@ -40,23 +44,12 @@
     text-align:center;
     vertical-align:middle;
     .modal {
-      display:inline-block;
-      border-radius:5px;
+      display:block;
       font-weight:300;
       position:relative;
-      .modal-svg {
-        position:absolute;
-        top:0;
-        left:0;
-        height:100%;
-        width:100%;
-        border-radius:3px;
-        rect {
-          stroke: #fff;
-          stroke-width: 2px;
-          stroke-dasharray: 778;
-          stroke-dashoffset: 778;
-        }
+      z-index: 3;
+      .youtube-player {
+        z-index:9999;
       }
     }
   }
@@ -105,5 +98,42 @@
   100% {
     transform:scale(0);
     opacity:0;
+  }
+}
+
+.close{
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  &:hover {
+    &::before, &::after {
+      background: darken(#fff, 5%);
+    }
+  }
+
+  &::before, &::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    margin-top: -1px;
+    color: #fff;
+  }
+  &::before {
+    transform:rotate(45deg);
+  }
+  &::after {
+    transform:rotate(-45deg);
+  }
+  &.hairline {
+    &::before, &::after {
+      height: 1px;
+    }
   }
 }
