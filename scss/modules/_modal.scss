@@ -111,7 +111,7 @@
   overflow: hidden;
   &:hover {
     &::before, &::after {
-      background: darken(#fff, 5%);
+      background: darken(#fff, 10%);
     }
   }
 
@@ -123,7 +123,7 @@
     top: 50%;
     left: 0;
     margin-top: -1px;
-    color: #fff;
+    background: #fff;
   }
   &::before {
     transform:rotate(45deg);
