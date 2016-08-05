@@ -323,6 +323,8 @@ p {
     font-weight: 600;
     color: #040707; }
   .hero-left .button-highlights {
+    margin-: 0.2em;
+    clear: both;
     margin-top: 1em;
     color: #74bf45;
     border-radius: 25px;
